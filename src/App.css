@@ -32,7 +32,43 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.container-holder {
+  width: 100%;
+  background-color: aliceblue;
+  min-height: 900px;
+}
+
+.mdi-child-window {
+  position: absolute;
+  touch-action: none;
+  user-select: none;
+}
+
+.mdi-child-window-header:active {
+  background-color: rgba(168, 218, 220, 1);
+}
+
+.mdi-child-window-header:hover {
+  cursor: pointer;
+}
+
+.maximized-child-window {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.minimized-child-window .card-body,
+.minimized-child-window .card-footer {
+  display: none;
+
+}
+
+.minimized-child-window {
+  min-width: 400px;
 }
