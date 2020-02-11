@@ -178,7 +178,7 @@ class MdiChildWindow extends React.Component {
           <button
             className="btn btn-danger rounded-circle"
             onClick={() => {
-              this.props.deRegisterWindow(this.props.children.type.name);
+              this.props.deRegisterWindow(this.props.windowTitle);
               this.props.close(this.props.index);
             }}
           >
